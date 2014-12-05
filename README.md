@@ -1,6 +1,6 @@
 # filter-type [![NPM version](https://badge.fury.io/js/filter-type.svg)](http://badge.fury.io/js/filter-type)
 
-> Filter an array by a JavaScript native type (e.g. functions, strings, etc).
+> Filter an array or arguments by JavaScript native type (e.g. functions, strings, etc).
 
 ## Install with [npm](npmjs.org)
 

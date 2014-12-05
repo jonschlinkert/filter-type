@@ -1,7 +1,7 @@
 {
   "name": "filter-type",
-  "description": "Filter an array by a JavaScript native type (e.g. functions, strings, etc).",
-  "version": "0.1.0",
+  "description": "Filter an array or arguments by JavaScript native type (e.g. functions, strings, etc).",
+  "version": "0.1.1",
   "homepage": "https://github.com/jonschlinkert/filter-type",
   "author": {
     "name": "Jon Schlinkert",
@@ -25,12 +25,25 @@
   "scripts": {
     "test": "mocha -R spec"
   },
+  "dependencies": {
+    "kind-of": "^0.1.2"
+  },
   "devDependencies": {
     "mocha": "*",
     "should": "*"
   },
-  "keywords": [],
-  "dependencies": {
-    "kind-of": "^0.1.2"
-  }
+  "keywords": [
+    "args",
+    "arguments",
+    "array",
+    "filter",
+    "javascript",
+    "native",
+    "type",
+    "typeof",
+    "util",
+    "utilities",
+    "utility",
+    "utils"
+  ]
 }
