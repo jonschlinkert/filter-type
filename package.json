@@ -1,6 +1,6 @@
 {
   "name": "filter-type",
-  "description": "Filter an array by the given typeof value.",
+  "description": "Filter an array by a JavaScript native type (e.g. functions, strings, etc).",
   "version": "0.1.0",
   "homepage": "https://github.com/jonschlinkert/filter-type",
   "author": {
