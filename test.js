@@ -7,8 +7,9 @@
 
 'use strict';
 
-var should = require('should');
+/* deps: mocha */
 var filter = require('./');
+require('should');
 
 var arr = [/foo/, /bar/, 1, 'a', {aaa: 'bbb'}, 3, 'b', 'c', 7, ['foo', 'bar'], {ccc: 'ddd'}, function one(){}];
 
