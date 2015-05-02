@@ -1,6 +1,11 @@
+*.DS_Store
 *.sublime-*
+.idea
 _gh_pages
+actual
+benchmark
 bower_components
+coverage
 node_modules
 npm-debug.log
 temp
