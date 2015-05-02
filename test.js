@@ -1,7 +1,7 @@
 /*!
  * filter-type <https://github.com/jonschlinkert/filter-type>
  *
- * Copyright (c) 2014 Jon Schlinkert, contributors.
+ * Copyright (c) 2014-2015 Jon Schlinkert.
  * Licensed under the MIT License
  */
 
@@ -10,11 +10,15 @@
 var should = require('should');
 var filter = require('./');
 
-var arr = [1, 'a', {aaa: 'bbb'}, 3, 'b', 'c', 7, ['foo', 'bar'], {ccc: 'ddd'}, function one(){}];
+var arr = [/foo/, /bar/, 1, 'a', {aaa: 'bbb'}, 3, 'b', 'c', 7, ['foo', 'bar'], {ccc: 'ddd'}, function one(){}];
 
 describe('filter', function () {
   it('should filter objects:', function () {
     filter(arr, 'object').should.eql([{aaa: 'bbb'}, {ccc: 'ddd'}]);
+  });
+
+  it('should filter regex:', function () {
+    filter(arr, 'regexp').should.eql([/foo/, /bar/]);
   });
 
   it('should filter arrays:', function () {
