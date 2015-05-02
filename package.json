@@ -1,7 +1,7 @@
 {
   "name": "filter-type",
-  "description": "Filter an array or arguments by JavaScript native type (e.g. functions, strings, etc).",
-  "version": "0.1.1",
+  "description": "Filter items from an array or arguments that match the specified javascript native type. Uses a very fast filter function.",
+  "version": "0.2.0",
   "homepage": "https://github.com/jonschlinkert/filter-type",
   "author": {
     "name": "Jon Schlinkert",
@@ -16,17 +16,21 @@
   },
   "license": {
     "type": "MIT",
-    "url": "https://github.com/jonschlinkert/filter-type/blob/master/LICENSE-MIT"
+    "url": "https://github.com/jonschlinkert/filter-type/blob/master/LICENSE"
   },
+  "files": [
+    "index.js"
+  ],
   "main": "index.js",
   "engines": {
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "mocha -R spec"
+    "test": "mocha"
   },
   "dependencies": {
-    "kind-of": "^0.1.2"
+    "arr-filter": "^1.1.0",
+    "kind-of": "^1.1.0"
   },
   "devDependencies": {
     "mocha": "*",
