@@ -1,7 +1,7 @@
 {
   "name": "filter-type",
   "description": "Filter items from an array or arguments that match the specified javascript native type. Uses a very fast filter function.",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "homepage": "https://github.com/jonschlinkert/filter-type",
   "author": {
     "name": "Jon Schlinkert",
@@ -44,10 +44,6 @@
     "javascript",
     "native",
     "type",
-    "typeof",
-    "util",
-    "utilities",
-    "utility",
-    "utils"
+    "typeof"
   ]
 }
