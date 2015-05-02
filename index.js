@@ -1,24 +1,17 @@
 /*!
  * filter-type <https://github.com/jonschlinkert/filter-type>
  *
- * Copyright (c) 2014 Jon Schlinkert, contributors.
+ * Copyright (c) 2014-2015 Jon Schlinkert.
  * Licensed under the MIT license.
  */
 
 'use strict';
 
 var typeOf = require('kind-of');
+var filter = require('arr-filter');
 
 module.exports = function filterType(arr, type) {
-  var len = arr.length;
-  var res = [];
-  var i = 0;
-
-  while (len--) {
-    var ele = arr[i++];
-    if (typeOf(ele) === type) {
-      res.push(ele);
-    }
-  }
-  return res;
+  return filter(arr, function (ele) {
+    return typeOf(ele) === type;
+  });
 };
